@@ -1,81 +1,55 @@
-<html>
-<head>
-<title>about.html</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<style type="text/css">
-.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
-.s0 { }
-.s1 { }
-.s2 { color: rgb(0,0,128); font-weight: bold; }
-.s3 { color: rgb(0,0,255); font-weight: bold; }
-.s4 { color: rgb(0,128,0); font-weight: bold; }
-</style>
-</head>
-<BODY BGCOLOR="#ffffff">
-<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
-<TR><TD><CENTER>
-<FONT FACE="Arial, Helvetica" COLOR="#000000">
-about.html</FONT>
-</center></TD></TR></TABLE>
-<pre>
+---
+layout: page
+title: 关于
+header: about me
+group: navigation
+index: 4
+---
+{% include codepiano/setup %}
 
-<span class="s0">--- 
-layout: page 
-title: 关于 
-header: about me 
-group: navigation 
-index: 4 
---- 
-{% include codepiano/setup %} 
- 
-</span><span class="s1">&lt;</span><span class="s2">h2 </span><span class="s3">id=</span><span class="s4">&quot;&quot;</span><span class="s1">&gt;</span><span class="s0">关于我</span><span class="s1">&lt;/</span><span class="s2">h2</span><span class="s1">&gt;</span><span class="s0"> 
- 
-</span><span class="s1">&lt;</span><span class="s2">ul</span><span class="s1">&gt;</span><span class="s0"> 
-    </span><span class="s1">&lt;</span><span class="s2">li</span><span class="s1">&gt;</span><span class="s0">大众版</span><span class="s1">&lt;/</span><span class="s2">li</span><span class="s1">&gt;</span><span class="s0"> 
-</span><span class="s1">&lt;/</span><span class="s2">ul</span><span class="s1">&gt;</span><span class="s0"> 
- 
-</span><span class="s1">&lt;</span><span class="s2">p</span><span class="s1">&gt;</span><span class="s0">Android开发者+H5语言爱好者+Php学习者,爱技术,爱开源,懂设计,爱赚钱。用技术创造和实现自我价值,不断提高自己！</span><span class="s1">&lt;/</span><span class="s2">p</span><span class="s1">&gt;</span><span class="s0"> 
- 
-</span><span class="s1">&lt;</span><span class="s2">p</span><span class="s1">&gt;</span><span class="s0">如果想更多的了解我，看这里</span><span class="s1">&lt;</span><span class="s2">a </span><span class="s3">href=</span><span class="s4">&quot;http://stormzhang.com/my-progress&quot;</span><span class="s1">&gt;</span><span class="s0">我的大事记</span><span class="s1">&lt;/</span><span class="s2">a</span><span class="s1">&gt;&lt;/</span><span class="s2">p</span><span class="s1">&gt;</span><span class="s0"> 
- 
-</span><span class="s1">&lt;</span><span class="s2">ul</span><span class="s1">&gt;</span><span class="s0"> 
-    </span><span class="s1">&lt;</span><span class="s2">li</span><span class="s1">&gt;</span><span class="s0">Ruby版</span><span class="s1">&lt;/</span><span class="s2">li</span><span class="s1">&gt;</span><span class="s0"> 
-</span><span class="s1">&lt;/</span><span class="s2">ul</span><span class="s1">&gt;</span><span class="s0"> 
- 
-{% highlight ruby %} 
-name = 'Leo' 
-real_name = '税华城' 
-description = 'Android Developer, H5 Fans, Love Open Source' 
-company = '小米科技' 
- 
-sina_weibo = 'LeoSandy' 
-email = 'stormzhang.dev$#mail.com'.gsub('$#', '@') 
-blog = 'http://shuihuacheng.github.io' 
-github = 'https://github.com/shuihuacheng' 
- 
-while true 
-programing 
-reading 
-enjoying 
-end 
-{% endhighlight %} 
- 
-</span><span class="s1">&lt;</span><span class="s2">h2 </span><span class="s3">id=</span><span class="s4">&quot;_2&quot;</span><span class="s1">&gt;</span><span class="s0">联系我</span><span class="s1">&lt;/</span><span class="s2">h2</span><span class="s1">&gt;</span><span class="s0"> 
- 
-</span><span class="s1">&lt;</span><span class="s2">ul</span><span class="s1">&gt;</span><span class="s0"> 
-    </span><span class="s1">&lt;</span><span class="s2">li</span><span class="s1">&gt;</span><span class="s0"> 
-        </span><span class="s1">&lt;</span><span class="s2">p</span><span class="s1">&gt;</span><span class="s0">GitHub: </span><span class="s1">&lt;</span><span class="s2">a </span><span class="s3">href=</span><span class="s4">&quot;https://github.com/shuihuacheng&quot;</span><span class="s1">&gt;</span><span class="s0">shuihuacheng</span><span class="s1">&lt;/</span><span class="s2">a</span><span class="s1">&gt;&lt;/</span><span class="s2">p</span><span class="s1">&gt;</span><span class="s0"> 
-    </span><span class="s1">&lt;/</span><span class="s2">li</span><span class="s1">&gt;</span><span class="s0"> 
- 
-    </span><span class="s1">&lt;</span><span class="s2">li</span><span class="s1">&gt;</span><span class="s0"> 
-        </span><span class="s1">&lt;</span><span class="s2">p</span><span class="s1">&gt;</span><span class="s0">微博: </span><span class="s1">&lt;</span><span class="s2">a </span><span class="s3">href=</span><span class="s4">&quot;http://weibo.com/LeoSandy&quot;</span><span class="s1">&gt;</span><span class="s0">LeoSandy</span><span class="s1">&lt;/</span><span class="s2">a</span><span class="s1">&gt;&lt;/</span><span class="s2">p</span><span class="s1">&gt;</span><span class="s0"> 
-    </span><span class="s1">&lt;/</span><span class="s2">li</span><span class="s1">&gt;</span><span class="s0"> 
- 
-    </span><span class="s1">&lt;</span><span class="s2">br </span><span class="s1">/&gt;</span><span class="s0"> 
- 
-    </span><span class="s1">&lt;</span><span class="s2">hr</span><span class="s1">&gt;</span><span class="s0"> 
-    </span><span class="s1">&lt;</span><span class="s2">div </span><span class="s3">id=</span><span class="s4">&quot;comment-hook&quot;</span><span class="s1">&gt;&lt;/</span><span class="s2">div</span><span class="s1">&gt;</span><span class="s0"> 
-    {% include custom/duoshuo.html %} 
-</span></pre>
-</body>
-</html>
+<h2 id="">关于我</h2>
+
+<ul>
+  <li>大众版</li>
+</ul>
+
+<p>Android开发者+H5语言爱好者+Php学习者,爱技术,爱开源,懂设计,爱赚钱。用技术创造和实现自我价值,不断提高自己！</p>
+
+<ul>
+  <li>Ruby版</li>
+</ul>
+
+{% highlight ruby %}
+name = 'Leo'
+real_name = '税华城'
+description = 'Android Developer, H5 Fans, Love Open Source'
+company = '小米科技'
+
+sina_weibo = 'LeoSandy'
+email = 'stormzhang.dev$#mail.com'.gsub('$#', '@')
+blog = 'http://shuihuacheng.github.io'
+github = 'https://github.com/shuihuacheng'
+
+while true
+programing
+reading
+enjoying
+end
+{% endhighlight %}
+
+<h2 id="_2">联系我</h2>
+
+<ul>
+  <li>
+    <p>GitHub: <a href="https://github.com/shuihuacheng">shuihuacheng</a></p>
+  </li>
+
+  <li>
+    <p>微博: <a href="http://weibo.com/LeoSandy">LeoSandy</a></p>
+  </li>
+
+  <br />
+
+  <hr>
+  <div id="comment-hook"></div>
+  {% include custom/duoshuo.html %}
