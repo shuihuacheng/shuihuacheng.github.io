@@ -1,5 +1,12 @@
+permalink: /:categories/:year/:month/:day/:title
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+auto: true
+pygments: true
+paginate: 5
+
 # Site settings
-title: shuihuacheng的博客
+title: 每天进步一点点
 email: shuihuacheng_tb@163.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
