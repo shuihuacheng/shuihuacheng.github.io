@@ -1,3 +1,13 @@
+---
+layout: post
+keywords: blog
+description: blog
+title: "Jekyll学习"
+categories: [Jekyll]
+tags: [Jekyll]
+---
+{% include codepiano/setup %}
+
 #Learn Jekyll
   
 	偶然在网上看到[StormZhang](http://stormzhang.com)的博客,觉得很不错,简单清晰,萌发也做一个一样的技术博客,查看他是使用Octopress做的博客,然后后来改成Jekyll。
