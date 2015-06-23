@@ -9,5 +9,5 @@ Android开发者+H5语言爱好者+Php学习者,爱技术,爱开源,懂设计,�
 
 ## 联系我
 
-* Github: [shuihuacheng](https://github.com/shuihuacheng.github.io)
+* Github: [shuihuacheng](https://github.com/shuihuacheng)
 * Weibo: [LeoSandy](http://weibo.com/LeoSHC)
