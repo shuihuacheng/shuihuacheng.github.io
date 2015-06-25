@@ -20,6 +20,7 @@ group: android
 1.定义.proto文件<br>
 &nbsp;&nbsp;&nbsp;&nbsp;根据需要在.proto文件中定义需要的结构化数据。
 
+*  .proto文件中可以选择性的定义一个package,用于在不同消息类型中引用。
 * 这里可以定义java_package指明生成类所在的包,
 java_outer_classname指明生成的类名。
 * message对应各种可读写的pb信息,message可以嵌套。
@@ -59,7 +60,9 @@ message AddressBook {
 {% endhighlight %}
   
 2.运行protocol buffer编译器生成序列化存储和解析类<br>
-&nbsp;&nbsp;&nbsp;&nbsp;提供get和set方法以及write和parse方法来生成、序列化、解析pb messages。你可以序列化存储到文件等地方,然后也可以从输入流中解析这些pb信息,而且PB支持扩展,你可以动态修改.proto文件重新生成新的序列化类,而不用担心兼容老版本格式。
+&nbsp;&nbsp;&nbsp;&nbsp;提供get和set方法以及write和parse方法来生成、序列化、解析pb messages。你可以序列化存储到文件等地方,然后也可以从输入流中解析这些pb信息,而且PB支持扩展,你可以动态修改.proto文件重新生成新的序列化类,而不用担心兼容老版本格式。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;可以将.proto文件置于工程src下，然后执行命令protoc ./**.proto  - - java_out=./即可生成proto序列化解析类
+
 
 ##为什么不使用XML等格式？
 &nbsp;&nbsp;&nbsp;&nbsp;protocol buffers相比XML有很多优点：更简单，更小，更快,很方便使用生成的解析类。
