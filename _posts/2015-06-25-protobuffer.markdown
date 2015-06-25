@@ -68,7 +68,7 @@ message AddressBook {
 &nbsp;&nbsp;&nbsp;&nbsp;protocol buffers相比XML有很多优点：更简单，更小，更快,很方便使用生成的解析类。
 
 ##安全性
-protocol buffers序列化存储后是二进制的信息,除非有.proto文件不然无法解析信息,这点比Json,XML等格式更安全。当然你也可以进一步对pb信息进行加密和解密。
+&nbsp;&nbsp;&nbsp;&nbsp;protocol buffers序列化存储后是二进制的信息,除非有.proto文件不然无法解析信息,这点比Json,XML等格式更安全。当然你也可以进一步对pb信息进行加密和解密。
 
 ###参考：<br>
 [Protocol Buffer官方文档](https://developers.google.com/protocol-buffers/)<br>
