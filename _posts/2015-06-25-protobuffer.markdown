@@ -63,6 +63,18 @@ message AddressBook {
 &nbsp;&nbsp;&nbsp;&nbsp;提供get和set方法以及write和parse方法来生成、序列化、解析pb messages。你可以序列化存储到文件等地方,然后也可以从输入流中解析这些pb信息,而且PB支持扩展,你可以动态修改.proto文件重新生成新的序列化类,而不用担心兼容老版本格式。<br>
 &nbsp;&nbsp;&nbsp;&nbsp;可以将.proto文件置于工程src下，然后执行命令protoc ./**.proto  - - java_out=./即可生成proto序列化解析类
 
+3.使用生成的Protocol Buffer API
+  {% highlight java %}
+Person john = Person.newBuilder()
+    .setId(1234)
+    .setName("John Doe")
+    .setEmail("jdoe@example.com")
+    .addPhone(
+      Person.PhoneNumber.newBuilder()
+        .setNumber("555-4321")
+        .setType(Person.PhoneType.HOME))
+    .build();
+  {% endhighlight %}
 
 ##为什么不使用XML等格式？
 &nbsp;&nbsp;&nbsp;&nbsp;protocol buffers相比XML有很多优点：更简单，更小，更快,很方便使用生成的解析类。
