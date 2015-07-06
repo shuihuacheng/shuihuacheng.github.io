@@ -62,7 +62,7 @@ message AddressBook {
 2.运行protocol buffer编译器生成序列化存储和解析类
 
 * 提供get和set方法以及write和parse方法来生成、序列化、解析pb messages。你可以序列化存储到文件等地方,然后也可以从输入流中解析这些pb信息,而且PB支持扩展,你可以动态修改.proto文件重新生成新的序列化类,而不用担心兼容老版本格式。
-* 可以将.proto文件置于工程src下，然后执行命令protoc ./**.proto  - - java_out=./即可生成proto序列化解析类
+* 可以将.proto文件置于工程src下，然后执行命令protoc ./**.proto  --java_out=./即可生成proto序列化解析类
 
 3.使用生成的Protocol Buffer API
   {% highlight java %}
