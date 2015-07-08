@@ -2,7 +2,7 @@
 layout: post
 keywords: blog
 description: blog
-title: "Android实用代码1"
+title: "Android实用代码一"
 categories: [Android]
 tags: [Android实用代码]
 group: Android
