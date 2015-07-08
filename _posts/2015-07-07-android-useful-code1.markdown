@@ -11,7 +11,7 @@ group: Android
 {% include codepiano/setup %}
 
 
-#Android实用代码1
+#Android实用代码一
 1.根据手机的分辨率 dp 和 px 转换
   {% highlight java %}
   	/**
