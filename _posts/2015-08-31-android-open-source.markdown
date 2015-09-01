@@ -44,3 +44,10 @@ group: android
 * 源码分析:
 [CodeKK](http://codekk.com/open-source-project-analysis/detail/Android/Mr.Simple/NineOldAnimations%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90)
 
+###6.Picasso
+&nbsp;&nbsp;&nbsp;&nbsp;一个强大的图片下载和缓存库。
+
+* 项目地址:
+[Picasso](https://github.com/square/picasso)
+
+
