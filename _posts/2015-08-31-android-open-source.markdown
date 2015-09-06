@@ -51,7 +51,7 @@ group: android
 [Picasso](https://github.com/square/picasso)
 
 ###7.ButterKnife
-&nbsp;&nbsp;&nbsp;&nbsp;利用annotation帮你快速完成View的初始化
+&nbsp;&nbsp;&nbsp;&nbsp;利用annotation帮你快速完成View的初始化,了解annotation的原理可以查看[CodeKK Annotation](http://codekk.com/open-source-project-analysis/detail/Android/Trinea/公共技术点之%20Java%20注解%20Annotation)
 
 * 项目地址：[ButterKnife](https://github.com/JakeWharton/butterknife)
 * 文档介绍：[使用文档说明](http://jakewharton.github.io/butterknife/
