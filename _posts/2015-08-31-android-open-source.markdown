@@ -50,4 +50,11 @@ group: android
 * 项目地址:
 [Picasso](https://github.com/square/picasso)
 
+###7.ButterKnife
+&nbsp;&nbsp;&nbsp;&nbsp;利用annotation帮你快速完成View的初始化
+
+* 项目地址：[ButterKnife](https://github.com/JakeWharton/butterknife)
+* 文档介绍：[使用文档说明](http://jakewharton.github.io/butterknife/
+)
+
 
