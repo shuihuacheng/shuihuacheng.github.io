@@ -13,8 +13,7 @@ tags: [DevTools]
 
 ## 1、[ButterKnife Zelezny](https://github.com/avast/android-butterknife-zelezny)
 
-ButterKnife 生成器，使用起来非常简单方便，不知道ButterKnife的赶紧去我的博客搜下
-
+ButterKnife 生成器，使用起来非常简单方便，不知道ButterKnife的赶紧去[ButterKnife](http://jakewharton.github.io/butterknife/)看下,使用时更新butterknife的jar包及Android Studio插件
 <img src="/image/zelezny_animated.gif"/>
 
 ## 2、[SelectorChapek](https://github.com/inmite/android-selector-chapek)
