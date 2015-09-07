@@ -24,3 +24,6 @@ group: android
 
 ###5.Android Drawable的高效用法
 * [http://android.jobbole.com/80973/](http://android.jobbole.com/80973/)
+
+###6.Android Layout Binder：转换XML布局文件
+* [http://android.lineten.net/layout.php](http://android.lineten.net/layout.php)
