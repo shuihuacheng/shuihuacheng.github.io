@@ -27,3 +27,6 @@ group: android
 
 ###6.Android Layout Binder：转换XML布局文件
 * [http://android.lineten.net/layout.php](http://android.lineten.net/layout.php)
+
+###7.［Android Studio 权威教程]打包、生成jks密钥、签名Apk、多渠道打包
+* [http://blog.csdn.net/yy1300326388/article/details/48344411](http://blog.csdn.net/yy1300326388/article/details/48344411)

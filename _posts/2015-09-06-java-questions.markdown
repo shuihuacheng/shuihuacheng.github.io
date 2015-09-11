@@ -13,6 +13,7 @@ group: Java
 ###1.HashMap的工作原理
 *  [http://www.importnew.com/7099.html](http://www.importnew.com/7099.html)
 *  [http://www.importnew.com/16599.html](http://www.importnew.com/16599.html)
+*  [HashMap 源码解析](http://www.importnew.com/16650.html)
 
 ###2.深入理解 Java 垃圾回收机制
 * [http://www.importnew.com/16173.html](http://www.importnew.com/16173.html)
@@ -34,4 +35,7 @@ group: Java
 
 ###8.JVM 垃圾回收器工作原理及使用实例介绍
 * [http://www.importnew.com/16325.html](http://www.importnew.com/16325.html)
+
+###9.Java ClassLoader
+* [深入分析Java ClassLoader原理](http://blog.csdn.net/xyang81/article/details/7292380)
 
