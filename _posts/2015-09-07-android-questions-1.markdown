@@ -32,9 +32,9 @@ group: android
 * [http://blog.csdn.net/yy1300326388/article/details/48344411](http://blog.csdn.net/yy1300326388/article/details/48344411)
 
 ###8.Android 各大网络请求库的比较及实战
-* [http://android.jobbole.com/81564/]{http://android.jobbole.com/81564/}
+* [http://android.jobbole.com/81564/](http://android.jobbole.com/81564/)
 
 ###9.Android 屏幕适配最佳实践
-* [http://android.jobbole.com/81569/]{http://android.jobbole.com/81569/}
+* [http://android.jobbole.com/81569/](http://android.jobbole.com/81569/)
 
 
