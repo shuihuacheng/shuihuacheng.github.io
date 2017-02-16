@@ -1,3 +1,15 @@
+---
+layout: post
+keywords: blog
+description: blog
+title: "程序员如何写好一篇技术文章"
+categories: [技术]
+tags: [markdown]
+group: 技术
+
+---
+{% include codepiano/setup %}
+
 ##程序员如何写好一篇技术文章
 
 ##### 1.问题总结
@@ -14,5 +26,5 @@
 
 ###### 参考
 
-http://droidyue.com/blog/2017/01/02/why-every-programmer-should-try-to-write-blogs/
+[技术小黑屋-程序员如何写好一篇技术文章](http://droidyue.com/blog/2017/01/02/why-every-programmer-should-try-to-write-blogs/)
 
