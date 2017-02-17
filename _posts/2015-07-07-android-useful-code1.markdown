@@ -11,8 +11,8 @@ group: Android
 {% include codepiano/setup %}
 
 
-#Android实用代码一
-1.根据手机的分辨率 dp 和 px 转换
+## Android实用代码
+### 1.根据手机的分辨率 dp 和 px 转换
   {% highlight java %}
   	/**
      * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
@@ -33,7 +33,7 @@ group: Android
     }
    {% endhighlight %}
    
-2.显示和隐藏键盘
+### 2.显示和隐藏键盘
   {% highlight java %}
 	    public static final class SoftInput {
         public static void hide(Context context, IBinder windowToken) {
