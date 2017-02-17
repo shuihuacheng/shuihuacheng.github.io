@@ -42,7 +42,7 @@ tags: [android_design_pattern]
 
 
 ## 参考资料
-[Java之美[从菜鸟到高手演变]之设计模式](http://blog.csdn.net/zhangerqing/article/details/8194653)
-[Android设计模式系列](http://www.cnblogs.com/qianxudetianxia/category/312863.html)
-[设计模式 | 菜鸟教程](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)
+[Java之美[从菜鸟到高手演变]之设计模式](http://blog.csdn.net/zhangerqing/article/details/8194653)<br>
+[Android设计模式系列](http://www.cnblogs.com/qianxudetianxia/category/312863.html)<br>
+[设计模式 | 菜鸟教程](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)<br>
 [Android源码设计模式分析项目](https://github.com/simple-android-framework/android_design_patterns_analysis)
