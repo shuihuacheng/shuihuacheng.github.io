@@ -3,8 +3,8 @@ layout: post
 keywords: blog
 description: blog
 title: "Android设计模式系列"
-categories: [Android Design Pattern]
-tags: [Android Design Pattern]
+categories: [android_design_pattern]
+tags: [android_design_pattern]
 ---
 {% include codepiano/setup %}
 
