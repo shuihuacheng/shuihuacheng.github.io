@@ -25,7 +25,7 @@ tags: [android_design_pattern]
 * 单例模式(Singleton Pattern)
 * 建造者模式(Builder Pattern)
 * 原型模式(Prototype Pattern)
-- **结构型模式(共7种)**
+**结构型模式(共7种)**
 * 适配器模式(Adapter Pattern)
 * 装饰器模式(Decorator Pattern)
 * 代理模式(Proxy Pattern)
@@ -33,7 +33,7 @@ tags: [android_design_pattern]
 * 桥接模式(Bridge Pattern)
 * 组合模式(Composite Pattern)
 * 享元模式(Flyweight Pattern)
-- **行为型模式(共11种)**
+**行为型模式(共11种)**
 * 策略模式(Strategy Pattern)
 * 模板方法模式(Template Pattern)
 * 观察者模式(Observer Pattern)
@@ -48,15 +48,15 @@ tags: [android_design_pattern]
 
 其实还有两类：并发型模式和线程池模式。
 
-- **J2EE模式** 
-MVC模式（MVC Pattern）
-业务代表模式（Business Delegate Pattern）
-组合实体模式（Composite Entity Pattern）
-数据访问对象模式（Data Access Object Pattern）
-前端控制器模式（Front Controller Pattern）
-拦截过滤器模式（Intercepting Filter Pattern）
-服务定位器模式（Service Locator Pattern）
-传输对象模式（Transfer Object Pattern）
+**J2EE模式** 
+* MVC模式（MVC Pattern）
+* 业务代表模式（Business Delegate Pattern）
+* 组合实体模式（Composite Entity Pattern）
+* 数据访问对象模式（Data Access Object Pattern）
+* 前端控制器模式（Front Controller Pattern）
+* 拦截过滤器模式（Intercepting Filter Pattern）
+* 服务定位器模式（Service Locator Pattern）
+* 传输对象模式（Transfer Object Pattern）
   
 
 ## 设计模式的６大原则
