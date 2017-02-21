@@ -40,12 +40,15 @@ FactoryPatternDemo，我们的演示类使用 ShapeFactory 来获取 Shape 对�
 
 步骤 1
 创建一个接口。
+```java
 Shape.java
 public interface Shape {
    void draw();
 }
+```
 步骤 2
 创建实现接口的实体类。
+```java
 Rectangle.java
 public class Rectangle implements Shape {
 
@@ -70,8 +73,10 @@ public class Circle implements Shape {
       System.out.println("Inside Circle::draw() method.");
    }
 }
+```
 步骤 3
 创建一个工厂，生成基于给定信息的实体类的对象。
+```java
 ShapeFactory.java
 public class ShapeFactory {
 	
@@ -90,8 +95,10 @@ public class ShapeFactory {
       return null;
    }
 }
+```
 步骤 4
 使用该工厂，通过传递类型信息来获取实体类的对象。
+```java
 FactoryPatternDemo.java
 public class FactoryPatternDemo {
 
@@ -117,3 +124,97 @@ public class FactoryPatternDemo {
       shape3.draw();
    }
 }
+```
+***
+### Android源码中的模式实现
+在Android的开发中，容器类通常是我们开发软件过程中不可缺少的基础组件，例如ArrayList, HashMap, HashSet等，而迭代容器中的元素是最常用的功能之一.容器中的迭代器就是用了工厂方法设计模式(当然还有迭代器模式)
+
+```java
+List<Integer> myIntegers = new ArrayList<Integer>() ;  
+myIntegers.add(1) ;  
+myIntegers.add(2) ;  
+myIntegers.add(3) ;  
+  
+Iterator<Integer> iter = myIntegers.iterator() ;  
+while (iter.hasNext()) {  
+    int item = iter.next();  
+    System.out.println("Item : " + item);  
+} 
+```
+这就是我们使用容器类的简单示例，下面我们看看容器类中的工厂方法实现原理。
+ArrayList容器返回迭代器的方法iterator()声明在List接口中，该类声明了通用的集合类接口，ArrayList实现了List接口。
+```java
+public class ArrayList<E> extends AbstractList<E>  
+        implements List<E>, RandomAccess, Cloneable, java.io.Serializable  
+```
+我们看看List中的iterator声明如下 : 
+```java
+/** 
+ * Returns an iterator over the elements in this list in proper sequence. 
+ * 
+ * @return an iterator over the elements in this list in proper sequence 
+ */  
+Iterator<E> iterator();  
+```
+该方法返回一个迭代器对象，Iterator<E>是一个接口。含有三个方法，如下 :
+```java
+public interface Iterator<E> {  
+  
+    boolean hasNext();  
+  
+    E next();  
+  
+    void remove();  
+}  
+```
+我们继续回到ArrayList类，查看iterator方法，可以看到该方法返回了一个ArrayListIterator类型的迭代器
+```java
+@Override public Iterator<E> iterator() {  
+    return new ArrayListIterator();  
+}  
+```
+
+```java
+private class ArrayListIterator implements Iterator<E> {  
+        /** Number of elements remaining in this iteration */  
+        private int remaining = size;  
+  
+        /** Index of element that remove() would remove, or -1 if no such elt */  
+        private int removalIndex = -1;  
+  
+        /** The expected modCount value */  
+        private int expectedModCount = modCount;  
+  
+        public boolean hasNext() {  
+            return remaining != 0;  
+        }  
+  
+        @SuppressWarnings("unchecked") public E next() {  
+            ArrayList<E> ourList = ArrayList.this;  
+            int rem = remaining;  
+            if (ourList.modCount != expectedModCount) {  
+                throw new ConcurrentModificationException();  
+            }  
+            if (rem == 0) {  
+                throw new NoSuchElementException();  
+            }  
+            remaining = rem - 1;  
+            return (E) ourList.array[removalIndex = ourList.size - rem];  
+        }  
+  
+        public void remove() {  
+            Object[] a = array;  
+            int removalIdx = removalIndex;  
+            if (modCount != expectedModCount) {  
+                throw new ConcurrentModificationException();  
+            }  
+            if (removalIdx < 0) {  
+                throw new IllegalStateException();  
+            }  
+            System.arraycopy(a, removalIdx + 1, a, removalIdx, remaining);  
+            a[--size] = null;  // Prevent memory leak  
+            removalIndex = -1;  
+            expectedModCount = ++modCount;  
+        }  
+    } 
+    ```
