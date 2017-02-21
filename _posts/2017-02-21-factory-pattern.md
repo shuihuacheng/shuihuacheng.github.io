@@ -173,9 +173,10 @@ public interface Iterator<E> {
     return new ArrayListIterator();  
 }  
 ```
+跟踪到ArrayListIterator类型， 如下:
 
-```java
  private class ArrayListIterator implements Iterator<E> { 
+ 
         /** Number of elements remaining in this iteration */  
         private int remaining = size;  
   
@@ -217,4 +218,4 @@ public interface Iterator<E> {
             expectedModCount = ++modCount;  
         }  
     } 
-    ```
+    
