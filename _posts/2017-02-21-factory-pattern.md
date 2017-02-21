@@ -27,7 +27,7 @@ tags: [android_design_pattern]
 ### UML图
 <img src="/image/design_pattern/factory_pattern_uml.png"/>
 
-###角色介绍
+### 角色介绍
 Product : 产品的抽象类
 ConcreteProduct : 具体的产品
 Factory : 工厂的抽象类
@@ -175,7 +175,7 @@ public interface Iterator<E> {
 ```
 
 ```java
-private class ArrayListIterator implements Iterator<E> {  
+ private class ArrayListIterator implements Iterator<E> { 
         /** Number of elements remaining in this iteration */  
         private int remaining = size;  
   
