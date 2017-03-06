@@ -35,8 +35,9 @@ AbstractFactoryPatternDemo，我们的演示类使用 FactoryProducer 来获取 
 
 步骤 1
 为形状创建一个接口。
-Shape.java
 ```java
+Shape.java
+
 public interface Shape {
    void draw();
 }
@@ -44,8 +45,9 @@ public interface Shape {
 
 步骤 2
 创建实现接口的实体类。
-Rectangle.java
 ```java
+Rectangle.java
+
 public class Rectangle implements Shape {
 
    @Override	
@@ -74,8 +76,9 @@ public class Circle implements Shape {
 
 步骤 3
 为颜色创建一个接口。
-Color.java
 ```java
+Color.java
+
 public interface Color {
    void fill();
 }
@@ -117,9 +120,9 @@ public class Blue implements Color {
 
 步骤 5
 为 Color 和 Shape 对象创建抽象类来获取工厂。
+```java
 AbstractFactory.java
 
-```java
 public abstract class AbstractFactory {
    abstract Color getColor(String color);
    abstract Shape getShape(String shape) ;
@@ -128,9 +131,9 @@ public abstract class AbstractFactory {
 
 步骤 6
 创建扩展了 AbstractFactory 的工厂类，基于给定的信息生成实体类的对象。
+```java
 ShapeFactory.java
 
-```java
 public class ShapeFactory extends AbstractFactory {
 	
    @Override
@@ -181,9 +184,8 @@ public class ColorFactory extends AbstractFactory {
 ```
 步骤 7
 创建一个工厂创造器/生成器类，通过传递形状或颜色信息来获取工厂。
-FactoryProducer.java
-
 ```java
+FactoryProducer.java
 public class FactoryProducer {
    public static AbstractFactory getFactory(String choice){
       if(choice.equalsIgnoreCase("SHAPE")){
@@ -198,9 +200,9 @@ public class FactoryProducer {
 
 步骤 8
 使用 FactoryProducer 来获取 AbstractFactory，通过传递类型信息来获取实体类的对象。
+```java
 AbstractFactoryPatternDemo.java
 
-```java
 public class AbstractFactoryPatternDemo {
    public static void main(String[] args) {
 
